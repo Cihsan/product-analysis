@@ -5,14 +5,15 @@ import './Header.css'
 const Header = () => {
     
     return (
-        <div className='header'>
+        <nav className='header'>
             <NavLink className={({ isActive }) => (isActive ? "active" : "link")} to='/'>Home</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? "active" : "link")} to='/blog'>Blog</NavLink>
             <NavLink className={({ isActive }) => (isActive ? "active" : "link")} to='/about'>About</NavLink>
-        </div>
+            
+        </nav>
     );
 };
 
 export default Header;
-//<NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to='/'>Home</NavLink>
 
 
