@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useApi = () => {
-    const [api,setApi]=useState()
+    const [api,setApi]=useState([])
     useEffect(()=>{
         fetch('review.json')
         .then(res=>res.json())
