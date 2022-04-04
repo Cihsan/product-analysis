@@ -2,12 +2,15 @@
     width: 95%;
     margin: 0 auto;
 }
+.top{
+    margin-top: 20px;
+}
 .front h1{
     font-size: 48px;
 }
 .front{
     display: flex;
-    align-items: center
+    align-items: center;
 }
 .front img{
     width: 50%;

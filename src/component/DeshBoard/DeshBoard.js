@@ -7,13 +7,9 @@ import './DeshBoard.css'
 const DeshBoard = () => {
     const [data]=useInfo()
     return (
-        <div>
+        <div className='container'>
            <h1>Data Analysis by Diffrent Chart</h1>
-           
-          {/*  {
-               info.map(data=><Chart data={data}></Chart>)
-           } */}
-           <div className="flex container">
+           <div className="flex ">
            <div className='LineChart'>
                 <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                         <Line type="monotone" dataKey="investment" stroke="red" />

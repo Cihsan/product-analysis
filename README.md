@@ -1,9 +1,14 @@
-# Getting Started with Create React App
+# Tech Review 
 
-This project was bootstrapped with [techreview live site](https://techreview.netlify.app/).
-This project was bootstrapped with [techreview guthub](https://github.com/programming-hero-web-course-4/product-analysis-website-Cihsan).
+This is my react project with vanila css [techreview live site](https://techreview.netlify.app/).
 
-## Available Scripts
+## Features
 
-* point one 
+* Use four diffrent Charts from rechart 
+* Use react Router Without loading navigation 
+* Use my made custom hook 
+* make own write in blog section
+* make responsive
+
+[techreview guthub](https://github.com/programming-hero-web-course-4/product-analysis-website-Cihsan).
 

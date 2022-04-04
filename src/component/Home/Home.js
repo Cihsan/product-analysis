@@ -6,7 +6,7 @@ const Home = () => {
     const[api]=useApi()
     
     return (
-        <div className='container'>
+        <div >
             <div className='front'>
                 
                 <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/10/asus-zenbook-duo.jpg" alt="" />
