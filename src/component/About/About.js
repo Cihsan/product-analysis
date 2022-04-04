@@ -6,9 +6,7 @@ const About = () => {
     return (
         <div style={{textAlign:'center',margin:'30px'}}>
             <h1>This is About Page</h1>
-            
             <button className='btn' onClick={()=>navigate('/')}>Click <AiOutlineRollback></AiOutlineRollback>Now</button>
-            
         </div>
     );
 };

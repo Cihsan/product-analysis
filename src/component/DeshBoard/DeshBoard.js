@@ -9,8 +9,9 @@ const DeshBoard = () => {
     return (
         <div className='container'>
            <h1>Data Analysis by Different Chart</h1>
-           <div className="flex ">
+           <div className="grid">
            <div className='LineChart'>
+               
                 <LineChart width={400} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                         <Line type="monotone" dataKey="investment" stroke="red" />
                         <Line type="monotone" dataKey="sell" stroke="blue" />

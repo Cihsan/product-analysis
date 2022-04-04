@@ -20,9 +20,9 @@ const Home = () => {
                     <button className='btn' onClick={()=>navigate('/desh-board')}>See To Chart</button>
                 </div>
             </div>
-            <div>
-                <h1 className='h1'>Customer Review ({api.length-3})</h1>
-                {api.slice(3,6).map(review=><Review review={review}></Review>)}
+            <div className='customer-review'>
+                <h1 className='h1'>Customer Review ({api.length})</h1>
+                {api.slice(0,3).map(review=><Review review={review}></Review>)}
                 <button className='btn' onClick={()=>navigate('/reviews')}>See More Review</button>
           </div>
         </div>
