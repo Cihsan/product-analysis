@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useInfo = () => {
+const useInfoChart = () => {
     const [data,setData]=useState([])
     useEffect(()=>{
         fetch('https://raw.githubusercontent.com/ProgrammingHero1/product-analysis-website/main/data.json')
@@ -10,4 +10,4 @@ const useInfo = () => {
     return [data,setData]
 };
 
-export default useInfo;
+export default useInfoChart;

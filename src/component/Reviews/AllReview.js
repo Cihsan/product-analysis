@@ -1,10 +1,10 @@
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Rating from 'react-rating';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-const Review = (props) => {
-    const {name,pic,review,rating}=props.review
-    
+
+const AllReview = (props) => {
+    const {name,pic,review,rating}=props.data
     return (
         <div>
             <div className='line'>
@@ -21,4 +21,4 @@ const Review = (props) => {
     );
 };
 
-export default Review;
+export default AllReview;

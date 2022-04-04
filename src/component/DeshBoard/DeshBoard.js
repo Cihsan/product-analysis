@@ -1,17 +1,17 @@
 import React from 'react';
-import useInfo from '../../hooks/useInfo';
+import useInfoChart from '../../hooks/useInfoChart';
 //import Chart from '../Chart/Chart';
 import { Area, Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, LineChart,Pie,PieChart,Scatter,Tooltip, XAxis, YAxis } from 'recharts';
 import './DeshBoard.css'
 
 const DeshBoard = () => {
-    const [data]=useInfo()
+    const [data]=useInfoChart()
     return (
         <div className='container'>
-           <h1>Data Analysis by Diffrent Chart</h1>
+           <h1>Data Analysis by Different Chart</h1>
            <div className="flex ">
            <div className='LineChart'>
-                <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+                <LineChart width={400} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                         <Line type="monotone" dataKey="investment" stroke="red" />
                         <Line type="monotone" dataKey="sell" stroke="blue" />
                         <Line type="monotone" dataKey="revenue" stroke="green" />
@@ -23,7 +23,7 @@ const DeshBoard = () => {
            </div>
            
            <div className='ComposedChart'>
-           <ComposedChart width={600} height={300} data={data} margin={{top: 5, right: 20, bottom: 5, left: 0}}>
+           <ComposedChart width={400} height={300} data={data} margin={{top: 5, right: 20, bottom: 5, left: 0}}>
           <CartesianGrid stroke="#f5f5f5" />
           <XAxis dataKey="month" scale="band" />
           <YAxis />
@@ -35,7 +35,7 @@ const DeshBoard = () => {
         </ComposedChart>
            </div>
            <div className='PieChart'>
-           <PieChart width={600} height={300}>
+           <PieChart width={400} height={300}>
           <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="red" />
           <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="green" label />
           <Tooltip />
@@ -43,15 +43,15 @@ const DeshBoard = () => {
            </div>
 
            <div className='BarChart'>
-           <BarChart width={600}height={300}data={data}margin={{top: 20,right: 30,left: 20,bottom: 5,}}>
+           <BarChart width={400}height={300}data={data}margin={{top: 20,right: 30,left: 20,bottom: 5,}}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="month" />
+          <XAxis dataKey="investment" />
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="investment" stackId="a" fill="red" />
+          <Bar dataKey="revenue" stackId="a" fill="red" />
           <Bar dataKey="sell" stackId="a" fill="blue" />
-          <Bar dataKey="revenue" stackId="a" fill="green" />
+          <Bar dataKey="month" stackId="a" fill="grey"/>
         </BarChart>
            </div>
            </div>

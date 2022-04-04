@@ -4,7 +4,7 @@ This is my react project with vanila css [techreview live site](https://techrevi
 
 ## Features
 
-* Use four diffrent Charts from rechart 
+* Use four different Charts from rechart 
 * Use react Router Without loading navigation 
 * Use my made custom hook 
 * make own write in blog section
