@@ -13,9 +13,6 @@ const Blog = () => {
             <p>Block Level Elements make anew line new line and Inline Elements do not make a new line, when we want to a block element to make inline element we use 'dispaly inline-block' <br />
             on the other hand we want to a inline element to make block element we use 'dispaly block'
             </p>
-            
-            <h1>Context API</h1>
-            <p></p>
         </article>
     );
 };

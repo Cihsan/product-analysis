@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useApi from '../../hooks/useApi';
 import Review from '../Review/Review';
-import './Home.css'
+import '../../assets/style/Home.css'
 
 
 

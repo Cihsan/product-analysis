@@ -1,8 +1,6 @@
 import React from 'react';
 import useInfoChart from '../../hooks/useInfoChart';
-//import Chart from '../Chart/Chart';
 import { Area, Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, LineChart,Pie,PieChart,Scatter,Tooltip, XAxis, YAxis } from 'recharts';
-import './DeshBoard.css'
 
 const DeshBoard = () => {
     const [data]=useInfoChart()
