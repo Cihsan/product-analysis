@@ -1,6 +1,6 @@
 # Tech Review 
 
-This is my react project with vanila css [techreview live site](https://techreview.netlify.app/).
+### This is my second react project with vanila css you can visit [techreview](https://techreview.netlify.app/).
 
 ## Features
 
@@ -8,7 +8,7 @@ This is my react project with vanila css [techreview live site](https://techrevi
 * Use react Router Without loading navigation 
 * Use my made custom hook 
 * make own write in blog section
-* make responsive
+* make responsive for mobile
 
 [techreview guthub](https://github.com/programming-hero-web-course-4/product-analysis-website-Cihsan).
 
