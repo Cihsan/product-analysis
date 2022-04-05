@@ -22,7 +22,7 @@ const Home = () => {
             </div>
             <div className='customer-review'>
                 <h1 className='h1'>Customer Review ({api.length})</h1>
-                {api.slice(0,3).map(review=><Review review={review}></Review>)}
+                {api.slice(0,3).map(review=><Review key={review.name} review={review}></Review>)}
                 <button className='btn' onClick={()=>navigate('/reviews')}>See More Review</button>
           </div>
         </div>

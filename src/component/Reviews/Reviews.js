@@ -6,7 +6,7 @@ const Reviews = () => {
     return (
         <div className='customer-review-full'>
             <h1>This is all Reviews</h1> 
-                {api.map(data=><AllReview data={data}></AllReview>)}
+                {api.map(data=><AllReview key={data.name} data={data}></AllReview>)}
         </div>
     );
 };
