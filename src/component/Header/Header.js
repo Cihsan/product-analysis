@@ -1,13 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
 import image from '../../assets/image/logo.png'
 const Header = () => {
     
     return (
         <nav className='header'>
-            <div style={{display:'flex'}}>
-            <img src={image} alt="" />
+            <div className='logoName'>
+           <Link to='/'> <img src={image} alt="" /></Link>
             <h1 style={{margin:'5px' }}>Tech <span style={{color:'#002255'}}>Review</span> </h1> 
             </div>
             <NavLink className={({ isActive }) => (isActive ? "active" : "link")} to='/'>Home</NavLink>

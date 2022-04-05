@@ -13,9 +13,11 @@ const Review = (props) => {
                     <h5>{name}</h5>
                 </div>
                 <div>
-                    <p className='m'>{review.slice(0,200)}</p>
+                    <p className='m'>{review.slice(0,200)}
+                    <small><Rating initialRating={rating}emptySymbol={<FontAwesomeIcon icon={faStar} />}fullSymbol={<FontAwesomeIcon style={{color: 'goldenrod'}} icon={faStar} />}readonly></Rating></small>
+                    </p>
                 </div>
-                <small><Rating initialRating={rating}emptySymbol={<FontAwesomeIcon icon={faStar} />}fullSymbol={<FontAwesomeIcon style={{color: 'goldenrod'}} icon={faStar} />}readonly></Rating></small>
+                
             </div>
         </div>
     );

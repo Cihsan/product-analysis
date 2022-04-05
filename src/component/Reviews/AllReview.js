@@ -13,11 +13,13 @@ const AllReview = (props) => {
                     <h5>{name}</h5>
                 </div>
                 <div>
-                    <p className='m'>{review.slice(0,200)}</p>
-                </div>
-                <small>
+                    <p className='m'>
+                    <small>
                     <Rating initialRating={rating}emptySymbol={<FontAwesomeIcon icon={faStar} />}fullSymbol={<FontAwesomeIcon style={{color: 'goldenrod'}} icon={faStar} />}readonly></Rating>
-                </small>
+                </small> <br />
+                        {review.slice(0,200)}</p>
+                </div>
+                
             </div>
         </div>
     );
